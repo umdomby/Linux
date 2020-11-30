@@ -1,0 +1,11 @@
+
+
+chmod 400 ~/.ssh/id_rsa      
+
+
+sudo apt install openssh-server    
+sudo systemctl enable sshd    s
+sh localhost
+
+
+
