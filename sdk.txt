@@ -1,6 +1,9 @@
 ----------------------SDK----------------------
 
 $ curl -s "https://get.sdkman.io" | bash
+sudo apt update
+sudo apt install zip
+
 Переключиться между версиями <<u>>
 
 sdk ls java
