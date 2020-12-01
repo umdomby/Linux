@@ -1,0 +1,33 @@
+https://www.youtube.com/watch?v=boq5z0VRZOo&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk
+
+
+AWS --> add security role SSH, HTTP
+
+sudo apt update; 
+sudo apt install zip; 
+curl -s "https://get.sdkman.io" | bash; 
+source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"; 
+sdk i  java 11.0.9-amzn; 
+sdk i maven;
+
+sudo amazon-linux-extras install nginx1.12
+
+sudo vi  /etc/nginx/nginx.conf
+"nginx" стало "ec2-user".
+sudo chown -Rf ec2-user:ec2-user /var/lib/nginx
+
+location / {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_pass http://localhost:8080;
+}
+
+location /img/ {
+    alias /home/ec2-user/uploads/;
+}
+mkdir uploads
+
+sudo nginx -s reload
+sudo service nginx start
+
+HOST 
