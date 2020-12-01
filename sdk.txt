@@ -1,4 +1,5 @@
 sudo apt update; sudo apt install zip; curl -s "https://get.sdkman.io" | bash; source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"; sdk i  java 11.0.9-amzn; sdk i maven;
+https://www.youtube.com/watch?v=boq5z0VRZOo&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk
 
 ----------------------SDK----------------------
 
