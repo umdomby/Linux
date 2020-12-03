@@ -31,6 +31,6 @@ mkdir uploads
 sudo nginx -s reload
 sudo service nginx start
 
-nohup java -jar amazon.jar > log.txt
+nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt
 
 HOST 
