@@ -38,7 +38,7 @@ nginx -s reload
 systemctl reload nginx
 systemctl restart nginx
 
-
+sudo yum autoremove nginx
 cat /etc/os-release
 
 
