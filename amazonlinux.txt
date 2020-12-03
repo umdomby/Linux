@@ -28,8 +28,16 @@ location /img/ {
 }
 mkdir uploads
 
-sudo nginx -s reload
-sudo service nginx start
+nginx -t
+systemctl status nginx
+systemctl stop nginx
+systemctl start nginx
+nginx -s reload
+systemctl reload nginx
+systemctl restart nginx
+
+
+
 
 nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt
 
