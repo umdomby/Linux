@@ -29,6 +29,8 @@ location /img/ {
 mkdir uploads
 
 nginx -t
+service nginx status
+
 systemctl status nginx
 systemctl stop nginx
 systemctl start nginx
@@ -36,6 +38,8 @@ nginx -s reload
 systemctl reload nginx
 systemctl restart nginx
 
+
+cat /etc/os-release
 
 
 
