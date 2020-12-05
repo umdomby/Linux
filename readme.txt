@@ -67,3 +67,6 @@ cd /F/Amazon/springb/out/artifacts/springb_jar
 
 
 java -jar springbootdemo.jar
+
+
+https://www.youtube.com/playlist?list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk
