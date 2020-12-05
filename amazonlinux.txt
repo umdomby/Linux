@@ -38,9 +38,10 @@ nginx -s reload
 systemctl reload nginx
 systemctl restart nginx
 
+chmod 755 filename
+
 sudo yum autoremove nginx
 cat /etc/os-release
-
 
 
 nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt
