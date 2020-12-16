@@ -44,6 +44,15 @@ sudo reboot
 sudo yum autoremove nginx
 cat /etc/os-release
 
+sudo apt-get remove nginx*
+sudo apt-get purge nginx*
+sudo netstat -ntlp | grep 80
+
+
+wget
+tar xvjf
+
+
 
 nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt
 
