@@ -48,3 +48,4 @@ cat /etc/os-release
 nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt
 
 HOST 
+sudo ssh -i "/home/navatar/ssh/119.pem" ec2-user@ec2-18-156-171-99.eu-central-1.compute.amazonaws.com
