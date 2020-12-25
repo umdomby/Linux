@@ -1,3 +1,8 @@
+sudo find ./ -type d -exec chmod 777 {} \;
+sudo find ./ -type f -exec chmod 777 {} \;
+
+
+
 https://github.com/cyberspacedk/Git-commands
 //добавить в локальный залить на удалённый
 cd /f/Spring/My/layer-cake
