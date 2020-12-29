@@ -1,4 +1,8 @@
 mkdir sarafan-app
 cd sarafan-app
-yarn init
-npm i express
+npm init
+npm install
+
+node
+
+
