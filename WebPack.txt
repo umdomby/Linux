@@ -1,0 +1,12 @@
+npm install -D webpack webpack-cli
+webpack
+npx webpack --config webpack.config.js
+https://webpack.js.org/guides/getting-started/#using-a-configuration
+
+npm uninstall copy-webpack-plugin
+npm install copy-webpack-plugin@6.2.1
+
+npm install -D html-webpack-plugin
+
+
+npm audit fix
