@@ -77,8 +77,12 @@ yarn add -D webpack webpack-cli webpack-dev-server babel-loader @babel/core @bab
 
 sudo lsof -i :8000
 ps aux | grep node
+pidof node
+killall node
+killall -s 9 node
 
 kill -9
+killall -9 node
 
 sudo find ./ -type d -exec chmod 777 {} \;
 sudo find ./ -type f -exec chmod 777 {} \;
