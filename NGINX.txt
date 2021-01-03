@@ -1,7 +1,9 @@
 
-sudo yum update
+cat /etc/os-release
 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+
+sudo yum update
 
 /etc/yum.repos.d/nginx.repo
 
@@ -11,5 +13,8 @@ baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
 gpgcheck=0
 enabled=1
 
+sudo yum install nginx
 
-sudo yum update
+sudo service nginx start
+
+sudo service nginx stop
