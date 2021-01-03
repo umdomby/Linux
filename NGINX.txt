@@ -3,4 +3,13 @@ sudo yum update
 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
 
+/etc/yum.repos.d/nginx.repo
+
+[nginx]
+name=nginx repo
+baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+
+
 sudo yum update
