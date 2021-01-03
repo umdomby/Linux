@@ -18,3 +18,21 @@ sudo yum install nginx
 sudo service nginx start
 
 sudo service nginx stop
+sudo vi etc/nginx/nginx.conf
+
+---------------------------------------------
+events {}
+
+http {
+
+    server {
+    	listen 80;
+    	server_name 3.120.209.107;
+    	root /site;
+    }
+
+}
+---------------------------------------------
+copy file site  cd / mkdir site
+
+
