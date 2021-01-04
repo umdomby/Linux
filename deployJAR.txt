@@ -54,7 +54,13 @@ to
         clientLogLevel: 'error',
     },
     
-6.
+6. 
+webpack.common.js 
+entry: path.join(__dirname, 'src', 'main', 'resources', 'static', 'js', 'main.js'),   and   path.join(__dirname, 'src', 'main', 'resources', 'js'),
+    delete: ", 'static'"
+ 
+ 7.
+ 
 
       
 
