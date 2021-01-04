@@ -54,9 +54,10 @@ webpack.prod.js add
         });
 4.
 .gitignore add
-/src/main/resources/static/js/
+        /src/main/resources/static/js/
 5.
-    webpack.common.js cut
+webpack.common.js cut
+
         mode: 'development',
         devtool: 'source-map',
         
@@ -72,7 +73,8 @@ webpack.prod.js add
     },
         
 to
-    webpack.dev.js put
+webpack.dev.js put
+
       mode: 'development',
       devtool: 'source-map',
       
@@ -96,7 +98,7 @@ entry: path.join(__dirname, 'src', 'main', 'resources', 'static', 'js', 'main.js
 yarn add -D clean-webpack-plugin
 
 8.
-    webpack.prod.js add
+webpack.prod.js add
     
         const CleanWebpackPlugin = require('clean-webpack-plugin');
         module.exports = merge(common, {
@@ -109,6 +111,10 @@ yarn add -D clean-webpack-plugin
                 path: path.resolve(__dirname, 'src', 'main', 'resources', 'static', 'js')
             }
         });
+        
+9. 
+MainController
+
 
 ......
 https://youtu.be/zZ7Z7aL2WFk?list=PLU2ftbIeotGqSTOVNjT4L3Yfy8jatCdhm
