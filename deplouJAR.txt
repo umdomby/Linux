@@ -1,0 +1,11 @@
+Первым делом нам необходимо разделить нашу конфигурацию webpack на 3: общая (базовая, входит в состав всех остальных конфигураций), конфигурация для разработки (dev, включает в себя hot code reload и генерацию source map для отладки в браузере) и конфигурация для сборки приложения на боевые сервера (prod, минифицрованный код без лишних зависимостей). В этом нам поможет плагин для WebPack с названием webpack-merge:
+https://webpack.js.org/guides/production/#setup
+
+Также нам необходимо перенастоить для prod окружения сборку итогового JS скрипта в каталог статических файлов в нашем Spring приложении:
+https://webpack.js.org/guides/output-management/
+
+После успешной сборки JS приложения нам небходимо настроить сборочный Gradle скрипт для запуска yarn задач (сборки JS). В этом нам поможет gradle-node-plugin:
+https://github.com/srs/gradle-node-plugin/blob/master/docs/node.md
+
+Диаграмма жизненного цикла процесса сборки приложений в Gradle:
+https://proandroiddev.com/understanding-gradle-the-build-lifecycle-5118c1da613f
