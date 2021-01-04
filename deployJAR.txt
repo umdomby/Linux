@@ -59,9 +59,9 @@ webpack.common.js
 entry: path.join(__dirname, 'src', 'main', 'resources', 'static', 'js', 'main.js'),   and   path.join(__dirname, 'src', 'main', 'resources', 'js'),
     delete: ", 'static'"
  
- 7.
- 
-
+7.
+......
+https://youtu.be/zZ7Z7aL2WFk?list=PLU2ftbIeotGqSTOVNjT4L3Yfy8jatCdhm
       
 
     
