@@ -23,13 +23,41 @@ webpack.prod.js
 .gitignore add
 /src/main/resources/static/js/
 5.
-    webpack.common.js
+    webpack.common.js cut
         mode: 'development',
         devtool: 'source-map',
+        
+        devServer: {
+            contentBase: './dist',
+            compress: true,
+            port: 8000,
+            allowedHosts: [
+                'localhost:9000'
+        ],
+        stats: 'errors-only',
+        clientLogLevel: 'error',
+    },
+        
 to
-    webpack.dev.js
+    webpack.dev.js put
       mode: 'development',
-      devtool: 'source-map', 
+      devtool: 'source-map',
+      
+        devServer: {
+            contentBase: './dist',
+            compress: true,
+            port: 8000,
+            allowedHosts: [
+                'localhost:9000'
+        ],
+        stats: 'errors-only',
+        clientLogLevel: 'error',
+    },
+    
+6.
+
+      
+
     
 
 
