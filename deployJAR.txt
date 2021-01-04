@@ -9,3 +9,13 @@ https://github.com/srs/gradle-node-plugin/blob/master/docs/node.md
 
 Диаграмма жизненного цикла процесса сборки приложений в Gradle:
 https://proandroiddev.com/understanding-gradle-the-build-lifecycle-5118c1da613f
+
+
+yarn add -D webpack-merge
+зависимость помогает объединять несколько конфигов
+
+webpack.config.js  rename  webpack.common.js
+
+
+
+
