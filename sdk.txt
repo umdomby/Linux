@@ -1,35 +1,12 @@
-sudo apt update; sudo apt install zip; curl -s "https://get.sdkman.io" | bash; source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"; sdk i  java 11.0.9-amzn; sdk i maven;
-https://www.youtube.com/watch?v=boq5z0VRZOo&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk
 
-----------------------SDK----------------------
 
 $ curl -s "https://get.sdkman.io" | bash
-sudo apt update
-sudo apt install zip
-
-sdk i maven
-
-Переключиться между версиями <<u>>
-
-sdk ls java
 
 
-ssh -i /F/Amazon/119.pem ec2-user@ec2-3-128-153-137.us-east-2.compute.amazonaws.com
-
-java -cp springbootdemo.jar net.proselyte.springbootdemo.SpringbootdemoApplication
-
-java -cp amazon.jar com.example.amazon.AmazonApplication
-
-cd /F/GitClone/layercake/out/artifacts/layercake_jar
-
-cd /F/GitClone/layercake/out/artifacts/layercake_jar
+$ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
-
-cd /F/Amazon/springbootdemo-master/out/artifacts/springbootdemo_jar
-
-
-cd /F/Amazon/springb/out/artifacts/springb_jar
+$ sdk version
 
 
-java -jar springbootdemo.jar
+  sdkman 5.0.0+51
