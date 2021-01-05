@@ -40,6 +40,29 @@ http {
     }
 
 }
+
+http {
+
+    include mime.types;
+
+    server {
+    	listen 80 default_server;
+    	server_name 3.120.209.107;
+    	root /site;
+        
+        location / {
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_pass http://localhost:8080;
+        }
+
+    }
+    
+
+}
+
+
+
 ---------------------------------------------
 copy file site  cd / mkdir site
 
