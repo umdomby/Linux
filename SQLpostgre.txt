@@ -1,0 +1,19 @@
+sudo apt install postgresql
+sudo apt-get update
+sudo apt install postgresql postgresql-contrib
+sudo -i -u postgres
+psql
+\conninfo
+\q    Чтобы выйти наберите
+
+
+createuser --interactive
+admin
+
+createdb admin
+
+
+sudo -u postgres psql
+ALTER USER postgres PASSWORD 'admin';
+
+https://www.pgadmin.org/docs/pgadmin4/development/backup_dialog.html
