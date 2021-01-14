@@ -28,3 +28,38 @@ postgres=# drop database database_name;
 
 
 https://www.pgadmin.org/docs/pgadmin4/development/backup_dialog.html
+
+
+
+-------------------------------------------
+http://www.dbrnd.com/2016/04/postgresql-how-to-install-postgresql-9-4-on-ubuntu-14-04/
+
+Сначала проверьте версию Ubuntu:
+
+lsb_release -sc
+Вам необходимо добавить последний репозиторий PostgreSQL для последней версии, иначе он установит PostgreSQL 9.3. Это для надежной версии.
+
+sudo add-apt-repository "deb https://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
+Обновите и установите PostgreSQL 9.4:
+
+sudo apt-get update
+sudo apt-get install postgresql-9.4
+Создается суперпользователь postgres по умолчанию и база данных postgres. Вам необходимо установить пароль для суперпользователя postgres.
+
+ubuntu@:~$ sudo passwd postgres
+Enter new UNIX password:****
+Retype new UNIX password:****
+passwd: password updated successfully
+Если служба не запущена, вы можете запустить службу PostgreSQL.
+
+sudo service postgresql start
+Подключите сервер PostgreSQL с помощью пользователя postgres:
+
+ubuntu@:~$ su postgres
+Password:****
+Создайте образец базы данных:
+
+createdb database_name
+Подключитесь к этой базе данных:
+
+psql -d database_name
