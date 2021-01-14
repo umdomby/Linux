@@ -1,1 +1,5 @@
 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04-ru
+sudo apt update
+sudo apt install nginx
