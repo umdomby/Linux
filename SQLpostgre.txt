@@ -1,3 +1,5 @@
+https://www.postgresql.org/download/linux/ubuntu/
+
 sudo apt install postgresql
 sudo apt-get update
 sudo apt install postgresql postgresql-contrib
