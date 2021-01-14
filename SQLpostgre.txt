@@ -12,8 +12,17 @@ admin
 
 createdb admin
 
-
 sudo -u postgres psql
 ALTER USER postgres PASSWORD 'admin';
+
+
+
+ps -ef | grep postgres
+
+-------delete------
+sudo service postgresql restart
+sudo -u postgres dropdb test3
+postgres=# drop database database_name;
+
 
 https://www.pgadmin.org/docs/pgadmin4/development/backup_dialog.html
