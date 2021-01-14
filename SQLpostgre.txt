@@ -28,6 +28,11 @@ sudo service postgresql restart
 sudo -u postgres dropdb test3
 postgres=# drop database database_name;
 
+---------Rest---------
+dpop databae_name
+sudo -i -u postgres
+createdb -T template0 digialt
+psql digialt < /home/navatar/Job/minsktrans/digialt.sql
 
 https://www.pgadmin.org/docs/pgadmin4/development/backup_dialog.html
 
