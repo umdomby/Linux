@@ -1,0 +1,6 @@
+sudo snap install nmap
+nmap localhost
+
+
+Очистить все правила в случае возникновения проблем можно командой:
+sudo iptables -F
