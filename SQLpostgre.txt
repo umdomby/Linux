@@ -19,16 +19,22 @@ createdb admin
 sudo -u postgres psql
 ALTER USER postgres PASSWORD 'admin';
 
-
-
 ps -ef | grep postgres
 
--------delete------
+--------role---------
+https://www.dmosk.ru/miniinstruktions.php?mini=postgresql-users
+
+=# DROP USER digialt;
+=# create user digialt with encrypted password 'digialt';
+=# \c digialt
+digialt=# GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO GROUP "digialt";
+
+-------delete base------
 sudo service postgresql restart
 sudo -u postgres dropdb test3
 postgres=# drop database database_name;
 
----------Rest---------
+---------rest-beckup--------
 dpop databae_name
 sudo -i -u postgres
 createdb -T template0 digialt
