@@ -31,10 +31,11 @@ digialt=# GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO GROUP "digialt"
 
 -------delete base------
 sudo service postgresql restart
-sudo -u postgres dropdb test3
+sudo -u postgres dropdb digialt
 postgres=# drop database database_name;
 
 ------Windows------
+\c digialt
 create database digialt;
 \i C:/Job/digialt.sql
 
