@@ -34,6 +34,10 @@ sudo service postgresql restart
 sudo -u postgres dropdb test3
 postgres=# drop database database_name;
 
+------Windows------
+create database digialt;
+\i C:/Job/digialt.sql
+
 ---------rest-beckup--------
 dpop databae_name
 sudo -i -u postgres
