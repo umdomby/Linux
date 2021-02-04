@@ -1,0 +1,14 @@
+//file fix_permissions.sh
+sudo chown pi:pi /usr/local/bin/ -R
+sudo chown pi:pi /opt/digialt/topupt/ -R
+
+nano fix_permissions.sh
+sudo chmod 755 fix_permissions.sh
+./fix_permissions.sh 
+
+sudo dpkg -i digialt_topupt_1.1.40-1.deb
+
+
+
+
+
