@@ -1,7 +1,7 @@
 sudo find ./ -type d -exec chmod 777 {} \;
 sudo find ./ -type f -exec chmod 777 {} \;
 
-
+sudo dpkg -i digialt_topupt_1.1.40-1.deb
 
 https://github.com/cyberspacedk/Git-commands
 //добавить в локальный залить на удалённый
