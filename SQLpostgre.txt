@@ -37,6 +37,8 @@ postgres=# drop database database_name;
 ------Windows------
 \c digialt
 create database digialt;
+CREATE ROLE digialt LOGIN PASSWORD 'digialt';
+ALTER DATABASE digialt OWNER TO digialt;
 \i C:/Job/digialt.sql
 
 ---------rest-beckup--------
