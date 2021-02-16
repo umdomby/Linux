@@ -42,7 +42,7 @@ ALTER DATABASE digialt OWNER TO digialt;
 \i C:/Job/digialt.sql
 
 ---------rest-beckup--------
-dpop databae_name
+drop database digialt;
 sudo -i -u postgres
 createdb -T template0 digialt
 psql digialt < /home/navatar/Job/minsktrans/digialt.sql
