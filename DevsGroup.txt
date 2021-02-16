@@ -6,8 +6,22 @@ nano fix_permissions.sh
 sudo chmod 755 fix_permissions.sh
 ./fix_permissions.sh 
 
+sudo vi /opt/digialt/topupt/topupt_config.properties
+
 sudo dpkg -i digialt_topupt_1.1.40-1.deb
 sudo cp topupt_config.properties /opt/digialt/topupt/
+
+apt install tcpdump
+sudo tcpdump -w dump
+
+
+sudo service ntp status
+
+ctrl+r
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+
+df -h
+
 
 
 
