@@ -23,6 +23,7 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 df -h
 
 sudo apt install iptraf
+sudo iptraf-ng
 
 
 
