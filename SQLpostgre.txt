@@ -1,9 +1,14 @@
+sudo -i -u postgres
+\c sarafan-heroku
+\i /home/navatar/loader/person.sql
+
+
+
 https://www.postgresql.org/download/linux/ubuntu/
 
 sudo apt install postgresql
 sudo apt-get update
 sudo apt install postgresql postgresql-contrib
-sudo -i -u postgres
 sudo -i -u postgres
 psql --version
 psql
