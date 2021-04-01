@@ -24,6 +24,10 @@ sudo mysql -u root -p
 
 show databases;
 
+sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
+
+start workbranch
+
 
 sudo systemctl restart mysql
 sudo systemctl stop mysql
