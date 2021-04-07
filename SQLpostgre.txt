@@ -1,6 +1,7 @@
 sudo -i -u postgres
 \c sarafan-heroku
 select * from pg_user;
+CREATE USER navatar WITH PASSWORD 'admin';
 \i /home/navatar/loader/person.sql
 
 
