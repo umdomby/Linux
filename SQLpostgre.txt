@@ -1,5 +1,6 @@
 sudo -i -u postgres
 \c sarafan-heroku
+select * from pg_user;
 \i /home/navatar/loader/person.sql
 
 
